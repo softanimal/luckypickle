@@ -1,0 +1,920 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #3B3B3B;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  display: none;
+}
+
+a {
+  color: #01ACAC;
+  position: relative;
+}
+
+a:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+a:hover:after{
+  width: 100%;
+  left: 0;
+  background: #01ACAC;
+}
+
+.yelp {
+  color: #fff;
+  font-size: 1.6rem;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.yelp a {
+  color: #fff;
+}
+
+.yelp-icon {
+   display: none;
+ }
+
+.action {
+ margin-top: 2rem;
+ margin-left: 40%;
+ font-family: "Arvo", serif;
+ font-size: 1.6rem;
+ border: 2px solid #01ACAC;
+ padding: 1rem;
+}
+
+.action a {
+  color: #01ACAC;
+}
+
+
+
+.action2 {
+ width: 131px;
+ font-family: "Arvo", serif;
+ font-size: 1.6rem;
+ background-color: #01ACAC;
+ color: #fff;
+ padding: 5%;
+}
+
+
+.action2 a {
+  color: #fff;
+}
+
+
+
+#mobile-hero {
+  width: 100%;
+  height: auto;
+}
+
+#mobile-hero img {
+  width: 100%;
+  height: auto;
+}
+
+.desktop-hero {
+  display: none;
+}
+
+#how-works {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.how-works2 {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-size: 2.5rem;
+}
+
+hr.one {
+   border: 2px dashed #01ACAC;
+   width: 150px;
+}
+
+hr.two {
+   border: 2px dashed #01ACAC;
+   width: 205px;
+}
+
+hr.four {
+   border: 2px dashed #01ACAC;
+   width: 165px;
+}
+
+.menu-grocery-serve {
+  text-align: center;
+}
+
+.items {
+  padding-top: 20%;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.items img {
+  width: 20%;
+  heigth: auto;
+}
+
+h2 {
+  padding-top: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #01ACAC;
+}
+
+.description {
+  padding-top: 5%;
+  font-size: 2.2rem;
+}
+
+
+
+.tomato {
+  background-image: url("../images/tomato-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.retreats {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: "Arvo", serif;
+  line-height: 1.5;
+}
+
+.available {
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+
+.italic {
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: "Arvo", serif;
+  font-weight: italic;
+}
+
+#menus {
+  display: none;
+}
+
+.photo-mobile {
+  width: 100%;
+  heigth: auto;
+  padding-bottom: 10%;
+}
+
+.photo-mobile img {
+  width: 100%;
+  heigth: auto;
+}
+
+.photo {
+  display: none;
+}
+
+.bio {
+  padding-top: 5%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.bio p {
+  line-height: 1.5
+}
+
+.signature {
+  font-family: "Kristi", cursive;
+  font-size: 4rem;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#reviews {
+  background: linear-gradient(-45deg, #23A6D5, #23D5AB);
+  margin-top: 100px;
+}
+
+.testimonial-text {
+  font-family: "Arvo", serif;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+  padding-bottom: 20%;
+}
+
+.review-icon {
+  width: 125px;
+  height: auto;
+  margin-left: 150px;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+
+.review-icon img {
+  width: 50%;
+  height: auto;
+}
+
+.yelp {
+  color: #fff;
+  font-size: 1.6rem;
+  padding-bottom: 25%;
+  text-align: left;
+}
+
+.logo-lower {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 25%;
+}
+
+.logo-lower img {
+  width: 75%;
+  height: auto;
+}
+
+footer {
+    background: linear-gradient(-45deg, #23D5AB, #01ACAC);
+}
+
+.lower-nav {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.lower-nav li {
+  padding-bottom: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.lower-nav li img {
+  width: 15%;
+  height: auto;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.4rem;
+  padding-bottom: 10%;
+}
+
+.gift {
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 20%;
+  padding-bottom: 30%;
+  font-family: "PT Sans", sans-serif;
+}
+
+.servicing {
+  padding-bottom: 20%;
+  padding-top: 10%;
+  width: 100%;
+  height: auto;
+}
+
+.servicing img {
+  width: 25%;
+  height: auto;
+}
+.servicing span {
+  font-family: "Arvo", serif;
+  font-size: 2.4rem;
+}
+
+.servicing p {
+  font-size: 1.4rem;
+  padding-top: 5%;
+}
+
+.contact-links {
+  font-size: 2rem;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+
+  }
+
+  .contact-links a {
+    color: #fff;
+  }
+
+
+
+/*Hamburger Menu*/
+
+.hamburger {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+
+
+.hamburger ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.hamburger li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.hamburger li a:hover {
+  background-color: #f4f4f4;
+}
+
+.hamburger .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.hamburger .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.hamburger .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.hamburger .menu-icon .navicon:before,
+.hamburger .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.hamburger .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.hamburger .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.hamburger .menu-btn {
+  display: none;
+}
+
+.hamburger .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.hamburger .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.hamburger .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.hamburger .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.hamburger .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.hamburger .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/*Contact Form*/
+
+#contact {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 30%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #01ACAC;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Amiko", sans-serif;
+    font-size: 1.6rem;
+}
+
+input[type=submit] {
+    background-color: #01ACAC;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+input[type=submit]:hover {
+    background-color: #23A6D5;
+    color: #fff;
+}
+
+form {
+  padding-top: 5%;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 70rem;
+  }
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+      .container {
+        width: 98rem;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      nav {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 1.6rem;
+        display: flex;
+        padding-top: 3rem;
+        padding-left: 3rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+      ul li {
+          padding-right: 3rem;
+      }
+
+      .action {
+       width: 126px;
+       font-family: "Arvo", serif;
+       font-weight: normal;
+       font-size: 1.6rem;
+       background-color: #01ACAC;
+       padding: 1%;
+      }
+
+      .action a:after{
+        content: '';
+        position: absolute;
+        width: 0; height: 3px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: #fff;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;
+      }
+
+      .action a:hover:after{
+        width: 100%;
+        left: 0;
+        background: #fff;
+      }
+
+
+      .action a {
+        color: #fff;
+      }
+
+      .action2 {
+       width: 126px;
+       font-family: "Arvo", serif;
+       font-weight: normal;
+       font-size: 1.6rem;
+       background-color: #01ACAC;
+       padding: 1%;
+      }
+
+      .action2 a:after{
+        content: '';
+        position: absolute;
+        width: 0; height: 3px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: #fff;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;
+      }
+
+      .action2 a:hover:after{
+        width: 100%;
+        left: 0;
+        background: #fff;
+      }
+
+
+      .action2 a {
+        color: #fff;
+      }
+
+
+
+      #mobile-hero {
+        display: none;
+      }
+
+      .desktop-hero {
+        padding-top: 2rem;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .desktop-hero img {
+        width: 100%;
+        height: auto;
+      }
+
+
+      .menu-grocery-serve {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .items {
+        padding: 10rem 2rem 2rem 2rem;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+      }
+
+      h2 {
+        padding-top: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #01ACAC;
+      }
+
+      .description {
+        padding-top: 20%;
+        font-size: 2.2rem;
+      }
+
+      .retreats {
+        padding-top: 20%;
+        padding-bottom: 20%;
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Arvo", serif;
+        line-height: 1.5;
+      }
+
+      .available {
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Arvo", serif;
+        font-weight: bold;
+      }
+
+      .italic {
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Arvo", serif;
+        font-style: italic;
+      }
+
+      #menus {
+        display: block;
+        background-image: url("../images/menu-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .menu-wrapper {
+        padding-top: 20%;
+        padding-bottom: 20%;
+      }
+      .menu-options {
+        background-color: #fff;
+        width: 300px;
+        padding-bottom: 5%;
+        padding-top: 5%;
+      }
+
+      hr.three {
+         border: 2px dashed #01ACAC;
+         width: 175px;
+      }
+
+      .menu-list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+        padding-top: 3%;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.6rem;
+      }
+
+      .menu-list li {
+        padding-top: 5%;
+      }
+
+
+      .photo {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .photo img {
+        width: 30%;
+        height auto;
+        float: left;
+        padding-right: 5%;
+      }
+
+
+      .bio {
+        font-family: "PT Sans", sans-serif;
+        font-size: 2.2rem;
+        line-height: 1.5;
+      }
+
+      .photo-mobile {
+        display: none;
+      }
+
+      .bio-header {
+        padding-top: 15%;
+        margin-right: 225px;
+      }
+
+      .signature {
+        font-family: "Kristi", cursive;
+        font-size: 4rem;
+        padding-top: 5%;
+        padding-bottom: 1%;
+      }
+
+      .testimonial-text {
+        font-family: "Arvo", serif;
+        font-size: 3rem;
+        color: #fff;
+        line-height: 1.5;
+        padding-bottom: 10%;
+      }
+
+      .review-icon {
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+      }
+
+      .yelp {
+        color: #fff;
+        font-size: 1.6rem;
+        padding-bottom: 1%;
+        text-align: center;
+      }
+
+
+      .yelp a {
+        color: #fff;
+      }
+
+      .logo-lower {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-top: 10%;
+      }
+
+      .logo-lower img {
+        width: 30%;
+        height: auto;
+      }
+
+      #contact {
+        text-align: center;
+        width: 80%;
+        padding-bottom: 10%;
+      }
+
+      input[type=text], select, textarea {
+          width: 75%;
+          padding: 12px;
+          border: 1px solid #01ACAC;
+          border-radius: 5px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+          font-family: "Amiko", sans-serif;
+          font-size: 1.6rem;
+      }
+
+      input[type=submit] {
+          background-color: #01ACAC;
+          color: #fff;
+          font-size: 2rem;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 75%;
+      }
+
+      input[type=submit]:hover {
+          background-color: #8498B6;
+          color: #fff;
+      }
+
+      form {
+        padding-top: 5%;
+      }
+
+      .lower-nav {
+        padding-top: 5%;
+        padding-bottom: 10%;
+        color: #fff;
+        font-size: 1.8rem;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .lower-nav ul {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .lower-nav li {
+        padding-bottom: 3%;
+      }
+
+      .copyright {
+        color: #fff;
+        font-size: 1.4rem;
+        padding-bottom: 1%;
+      }
+
+      .gift {
+        color: #fff;
+        font-size: 2rem;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-family: "PT Sans", sans-serif;
+      }
+
+      .servicing {
+        padding-bottom: 5%;
+      }
+
+      .servicing span {
+        font-family: "Arvo", serif;
+        font-size: 3rem;
+      }
+
+      .servicing p {
+        font-size: 1.4rem;
+        padding-top: 2%;
+      }
+
+      .contact-links {
+        font-size: 2rem;
+      }
+
+      .contact-links a {
+        color: #fff;
+      }
+
+
+      #how-works {
+        padding-top: 15%;
+        padding-bottom: 15%;
+      }
+
+
+      .yelp-icon {
+        display: block;
+         width: 100%;
+         height: auto;
+         text-align: center;
+         padding-bottom: 15%;
+      }
+
+      .yelp-icon img {
+         width: 5%;
+         height: auto;
+      }
+
+      .how-works2 {
+        padding-top: 15%;
+        padding-bottom: 15%;
+      }
+
+      .underline--magical {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0 100%;
+        transition: background-size 0.25s ease-in;
+        &:hover {
+          background-size: 100% 88%;
+        }
+
+
+
+}

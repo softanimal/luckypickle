@@ -313,7 +313,7 @@ footer {
 
 .gift {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-top: 20%;
   padding-bottom: 30%;
   font-family: "PT Sans", sans-serif;
@@ -544,7 +544,7 @@ form {
       }
 
       .action {
-       width: 126px;
+       width: 200px;
        font-family: "Arvo", serif;
        font-weight: normal;
        font-size: 1.6rem;
@@ -852,7 +852,7 @@ form {
 
       .gift {
         color: #fff;
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-top: 5%;
         padding-bottom: 10%;
         font-family: "PT Sans", sans-serif;
